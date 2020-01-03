@@ -31,7 +31,7 @@
 
         <header class="header">
           <div class="header__logo-box">
-            <img src="img/logo-white.png" alt="Logo" class="header__logo"/>
+            <img data-src="img/logo-white.png" alt="Logo" class="header__logo lazy"/>
           </div>
 
           <div class="header__text-box">
@@ -65,23 +65,23 @@
                 <div class="composition">
 
 
-                  <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
-                       sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300"
+                  <img data-srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                       data-sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300"
                        alt="Photo 1"
-                       class="composition__photo composition__photo--p1"
-                       src="img/nat-1-large.jpg">
+                       class="composition__photo composition__photo--p1 lazy"
+                       data-src="img/nat-1-large.jpg">
 
-                   <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
-                        sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300"
+                   <img data-srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                        data-sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300"
                         alt="Photo 1"
-                        class="composition__photo composition__photo--p2"
-                        src="img/nat-2-large.jpg">
+                        class="composition__photo composition__photo--p2 lazy"
+                        data-src="img/nat-2-large.jpg">
 
-                  <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
-                       sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300"
+                  <img data-srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                       data-sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300"
                        alt="Photo 1"
-                       class="composition__photo composition__photo--p3"
-                       src="img/nat-3-large.jpg">
+                       class="composition__photo composition__photo--p3 lazy"
+                       data-src="img/nat-3-large.jpg">
 
                 </div>
               </div>
@@ -143,7 +143,7 @@
             <div class="col-1-of-3">
               <div class="card">
                 <div class="card__side card__side--front">
-                  <div class="card__picture card__picture--1">
+                  <div class="card__picture card__picture--1 lazy" data-bg="linear-gradient(to right bottom, #ffb900, #ff7730), url(img/nat-5.jpg)">
                     &nbsp;
                   </div>
                   <h4 class="card__heading">
@@ -173,7 +173,7 @@
             <div class="col-1-of-3">
               <div class="card">
                 <div class="card__side card__side--front">
-                  <div class="card__picture card__picture--2">
+                  <div class="card__picture card__picture--2 lazy" data-bg="linear-gradient(to right bottom, #55c57a, #28b485), url(img/nat-6.jpg)">
                     &nbsp;
                   </div>
                   <h4 class="card__heading">
@@ -204,7 +204,7 @@
             <div class="col-1-of-3">
               <div class="card">
                 <div class="card__side card__side--front">
-                  <div class="card__picture card__picture--3">
+                  <div class="card__picture card__picture--3 lazy" data-bg="linear-gradient(to right bottom, #2998ff, #5643fa), url(img/nat-7.jpg)">
                     &nbsp;
                   </div>
                   <h4 class="card__heading">
@@ -241,9 +241,9 @@
         <section class="section-stories">
 
           <div class="bg-video">
-            <video class="bg-video__content" autoplay muted loop>
-              <source src="img/video.mp4" type="video/mp4">
-              <source src="img/video.webm" type="video/webm">
+            <video class="bg-video__content lazy" autoplay muted loop>
+              <source data-src="img/video.mp4" type="video/mp4">
+              <source data-src="img/video.webm" type="video/webm">
               Your browser is not supported!
             </video>
           </div>
@@ -255,7 +255,7 @@
           <div class="row">
             <div class="story">
               <figure class="story__shape">
-                <img src="img/nat-8.jpg" alt="person on a tour" class="story__img">
+                <img data-src="img/nat-8.jpg" alt="person on a tour" class="story__img lazy">
                 <figcaption class="story__caption">Mary Smith</figcaption>
               </figure>
 
@@ -269,7 +269,7 @@
 
             <div class="story">
               <figure class="story__shape">
-                <img src="img/nat-9.jpg" alt="person on a tour" class="story__img">
+                <img data-src="img/nat-9.jpg" alt="person on a tour" class="story__img lazy">
                 <figcaption class="story__caption">Jack Wilson</figcaption>
               </figure>
 
@@ -341,9 +341,9 @@
           <div class="footer__logo-box">
 
             <picture class="footer__logo">
-              <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x"
+              <source data-srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x"
                       media="(max-width: 37.5em)">
-              <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png">
+              <img data-srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" data-src="img/logo-green-2x.png" class="lazy">
             </picture>
           </div>
 
@@ -371,8 +371,8 @@
         <div class="popup" id="popup">
           <div class="popup__content">
             <div class="popup__left">
-              <img src="img/nat-8.jpg" alt="tour photo" class="popup__img">
-              <img src="img/nat-9.jpg" alt="tour photo" class="popup__img">
+              <img data-src="img/nat-8.jpg" alt="tour photo" class="popup__img lazy">
+              <img data-src="img/nat-9.jpg" alt="tour photo" class="popup__img lazy">
             </div>
             <div class="popup__right">
               <a href="#section-tours" class="popup__close">&times;</a>
@@ -385,5 +385,13 @@
             </div>
           </div>
         </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
+        <script>
+          let lazyLoadInstance = new LazyLoad({
+            elements_selector: ".lazy"
+          });
+        </script>
+
     </body>
 </html>
